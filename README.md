@@ -2,7 +2,7 @@
 
 Showcase of a RESTful API based on an old [Rocketseat video](https://www.youtube.com/watch?v=BN_8bCfVp88) but updated to current **ECMAScript** standards (import, export, etc.) and updating it to use a remote MongoDB server.
 
-## Developer Stack
+## Development Stack
 
 - NodeJS;
 - MongoDB;
