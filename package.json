@@ -1,0 +1,27 @@
+{
+  "name": "rest-api-showcase",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/FelipeSSDev/ExampleRestAPI.git",
+  "author": "FelipeSSDev <felipedevbrasil@gmail.com>",
+  "scripts": {
+    "start": "nodemon Public/index.js"
+  },
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.2",
+    "nodemailer": "^6.7.2",
+    "nodemailer-express-handlebars": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
