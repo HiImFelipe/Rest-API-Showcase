@@ -1,6 +1,6 @@
 # Rest API Showcase
 
-Showcase of a RESTful API based on an old [rocketseat video](https://www.youtube.com/watch?v=BN_8bCfVp88) but updated to current **ECMAScript** standards (import, export, etc.) and updating it to use a remote MongoDB server.
+Showcase of a RESTful API based on an old [Rocketseat video](https://www.youtube.com/watch?v=BN_8bCfVp88) but updated to current **ECMAScript** standards (import, export, etc.) and updating it to use a remote MongoDB server.
 
 ## Developer Stack
 
@@ -16,8 +16,6 @@ Showcase of a RESTful API based on an old [rocketseat video](https://www.youtube
 - NodeJS (v12+ recommended)
 - Yarn (optional)
 
-You can run MongoDB locally or use a cloud cluster.
-
 ### 1- Clone the repository
 
 `git clone https://github.com/FelipeSSDev/RestAPIShowcase.git`
@@ -28,7 +26,7 @@ You can run MongoDB locally or use a cloud cluster.
 
 ### 3- Create the dotenv file
 
-Create a ".env" file in the project's root with the following format:
+Create a `.env` file in the project's root with the following format:
 
 ```
 DB_USER = 'foo'
