@@ -1,8 +1,4 @@
 {
-    "presets": [
-      "@babel/preset-env"
-    ],
-    "plugins": [
-        ["inline-json-import", {}]
-    ]
+  "presets": ["@babel/preset-env"],
+  "plugins": [["inline-json-import", {}]]
 }

@@ -1,5 +1,5 @@
-import express from 'express'
-import authMiddleware from '../Middlewares/auth.js'
+import express from "express";
+import authMiddleware from "../Middlewares/auth.js";
 
 /*
  * Routes Section -
@@ -8,12 +8,10 @@ import authMiddleware from '../Middlewares/auth.js'
 
 const router = express.Router();
 
-router.use(authMiddleware)
+router.use(authMiddleware);
 
-router.get('/', (req, res) => {
+router.get("/", (req, res) => {
+  res.send({ ok: true });
+});
 
-    res.send({ ok: true })
-
-})
-
-export default app => app.use('/projects', router)
+export default (app) => app.use("/projects", router);
