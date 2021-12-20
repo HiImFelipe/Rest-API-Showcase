@@ -4,6 +4,7 @@ import bcrypt from "bcryptjs";
 import jsonWebToken from "jsonwebtoken";
 import crypto from "crypto";
 import mailer from "../Modules/mailer.js";
+import "dotenv/config.js";
 
 // Supporting Functions
 
@@ -50,10 +51,11 @@ router.post("/authenticate", async (req, res) => {
 
   // Filters
   const userDoesNotExist = !user;
-  const passwordIsNotCorrect = !(await bcrypt.compare(password, user.password));
 
   if (userDoesNotExist)
     return res.status(400).send({ error: "User not found" });
+
+  const passwordIsNotCorrect = !(await bcrypt.compare(password, user.password));
 
   if (passwordIsNotCorrect)
     return res.status(400).send({ error: "Password is incorrect" });
