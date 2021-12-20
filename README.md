@@ -20,7 +20,7 @@ You can run MongoDB locally or use a cloud cluster.
 
 ### 1- Clone the repository
 
-`git clone https://github.com/FelipeSSDev/ExampleRestAPI.git`
+`git clone https://github.com/FelipeSSDev/RestAPIShowcase.git`
 
 ### 2- Download dependencies
 
