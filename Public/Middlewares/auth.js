@@ -1,5 +1,4 @@
 import jsonWebToken from "jsonwebtoken";
-import authConfig from "../Config/auth.json";
 
 export default (req, res, next) => {
   const authHeader = req.headers.authorization;
@@ -22,7 +21,7 @@ export default (req, res, next) => {
     //regex to check if string has Bearer
     return res.status(401).send({ error: "Malformatted token" });
 
-  jsonWebToken.verify(token, authConfig.secret, (err, decoded) => {
+  jsonWebToken.verify(token, process.env.HASH_SECRET, (err, decoded) => {
     if (err) return res.status(401).send({ error: "Invalid token 2" });
 
     req.userId = decoded.id;

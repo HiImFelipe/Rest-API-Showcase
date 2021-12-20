@@ -2,14 +2,13 @@ import express from "express";
 import userModel from "../Models/user.js";
 import bcrypt from "bcryptjs";
 import jsonWebToken from "jsonwebtoken";
-import authConfig from "../Config/auth.json";
 import crypto from "crypto";
 import mailer from "../Modules/mailer.js";
 
 // Supporting Functions
 
 const generateToken = (params = {}) => {
-  return jsonWebToken.sign(params, authConfig.secret, {
+  return jsonWebToken.sign(params, process.env.HASH_SECRET, {
     expiresIn: 86400, // 1 day in seconds.
   });
 };

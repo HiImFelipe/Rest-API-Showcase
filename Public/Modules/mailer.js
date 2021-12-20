@@ -1,17 +1,16 @@
 import nodemailer from "nodemailer";
 import handleBars from "nodemailer-express-handlebars";
 import path from "path";
-import mailConfig from "../Config/mail.json";
 
 // This file is responsible for managing and setting up
 // nodemailer and handlebars
 
 const transport = nodemailer.createTransport({
-  host: mailConfig.host,
-  port: mailConfig.port,
+  host: process.env.MAIL_HOST,
+  port: process.env.MAIL_PORT,
   auth: {
-    user: mailConfig.user,
-    pass: mailConfig.pass,
+    user: process.env.MAIL_USER,
+    pass: process.env.MAIL_PASSWORD,
   },
 });
 
