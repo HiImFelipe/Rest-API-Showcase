@@ -1,6 +1,7 @@
 import nodemailer from "nodemailer";
 import handleBars from "nodemailer-express-handlebars";
 import path from "path";
+import "dotenv/config.js";
 
 // This file is responsible for managing and setting up
 // nodemailer and handlebars

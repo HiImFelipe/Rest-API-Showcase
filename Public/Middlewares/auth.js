@@ -1,4 +1,5 @@
 import jsonWebToken from "jsonwebtoken";
+import "dotenv/config.js";
 
 export default (req, res, next) => {
   const authHeader = req.headers.authorization;
