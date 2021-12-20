@@ -38,9 +38,8 @@ const userSchema = new mongo.Schema({
 });
 
 /*
- * pre() is a mongoose function that basically says
- * you want something from happening before x happens
- * in this case, before it saves the values
+ * pre() is a mongoose function that basically says you want x happening before y.
+ * In this case, before it saves the values, we will run a piece of code
  */
 
 userSchema.pre("save", async function (next) {
